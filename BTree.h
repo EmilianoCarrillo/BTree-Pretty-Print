@@ -1,5 +1,7 @@
+
 //
-// Created by Emiliano Carrillo Moncayo on 10/16/18.
+// Arreglado y Editado por Omar Garduza y Emiliano Carrillo
+// 16/oct/2018
 //
 
 #ifndef TAREA_10_BTREE_H
@@ -19,7 +21,7 @@ struct btnode
     int value[MAX + 1];
     btnode *child[MAX + 1] ;
     btnode()
-    {
+
         for(int i=0; i<MAX+1; i++)
         {
             value[i]=0;
