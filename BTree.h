@@ -1,20 +1,25 @@
-
+// Implementación de Árbol B con impresión gráfica en linea de comando.
+// Arreglado y Editado por:
+//     Omar Garduza y Emiliano Carrillo.
+//     16/oct/2018
 //
-// Arreglado y Editado por Omar Garduza y Emiliano Carrillo
-// 16/oct/2018
+// Ver historial completo de cambios en:
+//     https://github.com/emiliano-carrillo/BTree-Pretty-Print
 //
-
-#ifndef TAREA_10_BTREE_H
-#define TAREA_10_BTREE_H
-
+// *Para cambiar el orden del árbol B asignar MAX y MIN coo se indica a continuación*
+//     MAX: orden - 1;
+//     MIN: MAX / 2
+//
 
 #include <iostream>
 #include <stdlib.h>
 
 using namespace std;
 
-const int MAX = 4;
-const int MIN = 2 ;
+//Árbol de orden 3
+const int MAX = 2;
+const int MIN = 1;
+
 struct btnode
 {
     int count ;
@@ -412,4 +417,3 @@ void btree::printTree(btnode *myNode,  int nChild, string prevString ) {
     }
 }
 
-#endif //TAREA_10_BTREE_H
